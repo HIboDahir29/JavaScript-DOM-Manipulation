@@ -44,7 +44,7 @@ button.on("click", function() {
         console.log(param);
         // Append one table row `tr` for each UFO Sighting object
         var row = tbody.append("tr");
-        // Use `Object.entries` to console.log each UFO Sighting value
+        // Use `Object.entries` to console.log 
         Object.entries(param).forEach(function ([key, value]) {
             console.log(key, value);
             // Append a cell to the row for each value
