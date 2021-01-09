@@ -10,10 +10,10 @@ tableData.forEach(function (sighting) {
 
     var row = tbody.append('tr');
 
-   // Use `Object.entries` to console.log
+    // Use `Object.entries` to console.log
     Object.entries(sighting).forEach(function ([key, value]) {
         console.log(key, value);
- // Append a cell to the row for each value
+        // Append a cell to the row for each value
         var cell = row.append("td");
         cell.text(value);
     });
@@ -23,7 +23,7 @@ tableData.forEach(function (sighting) {
 
 // Select the button
 var button = d3.select("#filter-btn");
-button.on("click", function() {
+button.on("click", function () {
 
     tbody.html("");
 
@@ -39,7 +39,7 @@ button.on("click", function() {
     console.log(filteredData);
 
 
-    filteredData.forEach(function(param) {
+    filteredData.forEach(function (param) {
 
         console.log(param);
         // Append one table row `tr` for each UFO Sighting object
